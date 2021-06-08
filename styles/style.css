@@ -1,3 +1,65 @@
+/* COMMON */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif; */
+    font-size: 15px;
+}
+
+/* END OF COMMON */
+
+/* MAIN */
+
+.cars-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.car-container {
+    padding: 10%;
+    color: white;
+}
+
+.car-container-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.car-container-2 {
+    background-color: hsl(184, 100%, 22%)
+}
+
+.car-container-3 {
+    background-color: hsl(179, 100%, 13%)
+}
+
+.car__header {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+
+.car__description {
+    font-family: 'Lexend Deca';
+    margin-bottom: 20%;
+    font-weight: 400;
+}
+
+.cta__button {
+    background-color: white;
+    text-align: center;
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca';
+}
+
+/* FOOTER */
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -6,3 +68,5 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/* END OF FOOTER */
