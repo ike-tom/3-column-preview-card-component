@@ -1,0 +1,154 @@
+/* COMMON */
+@brightOrange:hsl(31, 77%, 52%);
+@darkCyan:hsl(184, 100%, 22%);
+@veryDarkCyan:hsl(179, 100%, 13%);
+@transparentWhite:hsla(0, 0%, 100%, 0.75);
+@veryLightGray:hsl(0, 0%, 95%);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    background-color: @veryLightGray;
+}
+
+/* END OF COMMON */
+
+/* MAIN */
+
+.cars-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 1.5rem;
+    border-radius: 20px;
+    overflow: hidden;
+    @media(min-width:768px) {        
+            margin: 5rem 3rem;
+        }
+    @media(min-width:1025px) {
+            flex-direction: row;
+        }
+    .car-container {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5rem;        
+    }
+    .car__header {
+        margin: 1rem 0;
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: @veryLightGray;
+        @media(min-width:768px) { 
+            font-size: 3.5rem;
+        }
+        @media(min-width:1025px) {
+            font-size: 3.3rem;
+            margin: 1rem 0;
+        }
+    }    
+    .car__description {
+        flex-grow: 1;
+        margin-bottom: 2.5rem;
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        color: @transparentWhite;
+        @media(min-width:768px) {
+            font-size: 2rem;
+        }
+        @media(min-width:1025px) {
+            font-size: 1.2rem;
+        }
+    }
+    .car-container-1 {
+        background-color: @brightOrange
+    }
+    .car-container-2 {
+        background-color: @darkCyan;
+    }
+    
+    .car-container-3 {
+        background-color: @veryDarkCyan;
+    }
+    .cta__button-1 {
+        color: @brightOrange
+    }
+    .cta__button-2 {
+        color: @darkCyan;
+    }
+    
+    .cta__button-3 {
+        color: @veryDarkCyan;
+    }
+}
+.cta__button {
+    height: 40px;
+    width: 130px;
+    font-family: 'Lexend Deca';
+    background-color: @veryLightGray;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    @media(min-width:768px){
+        height: 80px;
+        width: 260px;
+        font-size: 1.7rem;
+        border-radius: 40px;
+    }
+    @media(min-width:1025px) {
+        margin-top: 40px;
+        height: 60px;
+        width: 195px;
+        font-size: 1.2rem;
+        border-radius: 30px;
+    }
+    &:hover {
+        background-color: transparent;
+        color: @veryLightGray;
+        border: 2px solid @veryLightGray;
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    margin-bottom: 1rem;    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: @veryDarkCyan;
+        @media(min-width:768px){
+            font-size: 1.4rem
+            }
+        @media(min-width:1025px) {
+            font-size: 1rem;
+        }
+        a {
+            color: @brightOrange;
+            text-decoration: none;
+            transition: 0.5s;
+            &:hover {
+                color: @darkCyan;
+                }
+        }
+    }
+}
+
+/* END OF FOOTER */
+    
+@media(min-width:768px){      
+    .car__icon {
+        height: 60px;
+    }
+}
+
+@media(min-width:1025px) {    
+    .body {
+        overflow: hidden;
+    }
+}
