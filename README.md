@@ -14,6 +14,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/ike-tom/3-column-preview-card-component
+- Live URL https://3-column-preview-card-component-gamma.vercel.app/
 
 ## My process
 
